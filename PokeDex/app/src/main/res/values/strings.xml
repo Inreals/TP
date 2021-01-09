@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PokeDex</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="gen1_pokemon">1ère Génération de Pokémon</string>
+    <string name="gen2_pokemon">2ème Génération de Pokémon</string>
+    <string name="gen3_pokemon">3ème Génération de Pokémon</string>
+    <string name="gen4_pokemon">4ème Génération de Pokémon</string>
+    <string name="gen5_pokemon">5ème Génération de Pokémon</string>
+    <string name="gen6_pokemon">6ème Génération de Pokémon</string>
+    <string name="gen7_pokemon">7ème Génération de Pokémon</string>
+    <string name="gen8_pokemon">8ème Génération de Pokémon</string>
+    <string name="title_activity_pokemon_description">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="description">Description</string>
+    <string name="evolution">Evolution</string>
+    <string name="taille">Taille :</string>
+    <string name="poids">Poids :</string>
+    <string name="types">Types :</string>
+    <string name="pokedex">Pokédex</string>
+    <string name="nom_pokemon">Nom_pokemon</string>
+    <string name="aucune_volution">Aucune évolution</string>
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/gen1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="getPokemonGen"
+            android:scaleType="centerCrop"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:srcCompat="@drawable/image_pressable" />
+
+        <ImageView
+            android:id="@+id/gen2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="getPokemonGen"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:srcCompat="@drawable/image_pressable" />
+
+        <ImageView
+            android:id="@+id/gen3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="getPokemonGen"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:srcCompat="@drawable/image_pressable" />
+
+        <ImageView
+            android:id="@+id/gen4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="getPokemonGen"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:srcCompat="@drawable/image_pressable" />
+
+        <ImageView
+            android:id="@+id/gen5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="getPokemonGen"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:srcCompat="@drawable/image_pressable" />
+
+        <ImageView
+            android:id="@+id/gen6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="getPokemonGen"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:srcCompat="@drawable/image_pressable" />
+
+        <ImageView
+            android:id="@+id/gen7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="getPokemonGen"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:srcCompat="@drawable/image_pressable" />
+
+        <ImageView
+            android:id="@+id/gen8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="getPokemonGen"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            app:srcCompat="@drawable/image_pressable" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listagepokemon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
