@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 
 
 
-class PokemonAdapter (private val listePokemon: List<Pokemon>, var mycontext: Context,private val listener : (Pokemon) -> Unit) :
+class PokemonAdapter (private val listePokemon: List<Pokemon>, var mycontext: Context,private val listener : (Int) -> Unit) :
     RecyclerView.Adapter<PokemonAdapter.MyViewHolder>() {
 
 
@@ -32,7 +32,8 @@ class PokemonAdapter (private val listePokemon: List<Pokemon>, var mycontext: Co
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         Glide.with(mycontext).load("https://pokeres.bastionbot.org/images/pokemon/"+listePokemon[position].pokemonId+".png").placeholder(R.drawable.gen_selected).into(holder.pokemon)
-        holder.itemView.setOnClickListener{listener(listePokemon[position])}
+        holder.itemView.setOnClickListener{listener(listePokemon[position].pokemonId)}
+
 
     }
 

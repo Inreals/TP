@@ -69,9 +69,10 @@ class MainActivity : AppCompatActivity() {
             Log.i("Main", "Nombre de pokemon dans cette gen " + pokemonList.size.toString())
             var rvPokemon = findViewById<RecyclerView>(R.id.listagepokemon)
             val adapter: PokemonAdapter = PokemonAdapter(pokemonList, this@MainActivity)
-            { pokemon ->
+            { pokemonid ->
+                Log.i("Pos",pokemonid.toString())
                 val intent = Intent(this@MainActivity, PokemonDescription::class.java)
-                IdCompanion.id = pokemon.pokemonId
+                IdCompanion.id = pokemonid
                 startActivity(intent)
 
             }

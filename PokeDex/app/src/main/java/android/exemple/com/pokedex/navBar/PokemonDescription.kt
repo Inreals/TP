@@ -116,8 +116,8 @@ class PokemonDescription : AppCompatActivity() {
                 types = ""
 
                 if (pokemonInformation != null) {
-                    taille = pokemonInformation.height + " m"
-                    poids = pokemonInformation.weight + " kg"
+                    taille = (pokemonInformation.height/10).toString() + " m"
+                    poids = (pokemonInformation.weight/10).toString() + " kg"
                     for (type in pokemonInformation.types) {
                         types += type.type.name + " "
                     }
@@ -135,12 +135,19 @@ class PokemonDescription : AppCompatActivity() {
                             val pokemonInformationSuite = response.body()
 
                             if (pokemonInformationSuite != null) {
-                                nom = pokemonInformationSuite.names[4].name
+
 //
                                 var i = 0
                                 while (pokemonInformationSuite.flavor_text_entries[i].language.name != "fr") {
                                     i++
                                 }
+                                var j = 0
+                                while(pokemonInformationSuite.names[j].language.name != "fr")
+                                {
+                                    j++
+                                }
+
+                                nom = pokemonInformationSuite.names[j].name
                                 description = pokemonInformationSuite.flavor_text_entries[i].flavor_text
                                 Log.i("PokemonDescription", "Description du pokemon" + description)
                                 findViewById<TextView>(R.id.nom).text = nom
