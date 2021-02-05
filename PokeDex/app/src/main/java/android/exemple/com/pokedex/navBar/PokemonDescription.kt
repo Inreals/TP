@@ -41,9 +41,11 @@ class PokemonDescription : AppCompatActivity() {
         PokemonInDb()
         title = "Pokemon#" + IdCompanion.id
 
+
         setContentView(R.layout.activity_pokemon_description)
         val imagePokemon = findViewById<ImageView>(R.id.imagePokemon)
         Glide.with(this).load("https://pokeres.bastionbot.org/images/pokemon/" + IdCompanion.id + ".png").into(imagePokemon!!)
+
 
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
@@ -199,6 +201,7 @@ class PokemonDescription : AppCompatActivity() {
     private fun updateColorAccent(type: String) {
         fun setColor(R: Int, G: Int, B: Int) {
             findViewById<BottomNavigationView>(android.exemple.com.pokedex.R.id.nav_view).setBackgroundColor(Color.rgb(R, G, B))
+            findViewById<ImageView>(android.exemple.com.pokedex.R.id.couleur).setBackgroundColor(Color.rgb(R, G, B))
         }
         when (type) {
             "normal" -> setColor(128, 128, 128)
